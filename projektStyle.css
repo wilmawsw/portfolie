@@ -1,23 +1,32 @@
 body {
-  background-color: rgb(240,248,255);
+  background-color: whitesmoke;
 }
 
 /* overskrift h1 design */
 h1{
-font-style: italic;
+font-style: cursive;
 }
 
 p{
-background-color: rgb(135,206,235)
+background-color: white;
 }
 
 
 
-.kasse{
-float: right;
-background-color: rgb(30,144,255);
+div.kasse{
+background-color: aliceblue;
+border: 2px solid black;
 width: 40%;
-height: 30%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
+
+div.kasse2{
+background-color: aliceblue;
+border: 2px solid black;
+width: 40%;
+height: 40%;
 overflow: hidden;
 font-size: 40;
 }
