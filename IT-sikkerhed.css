@@ -1,0 +1,22 @@
+body {
+  background-color: aliceblue;
+}
+
+/* overskrift h1 design */
+h1{
+
+}
+
+
+
+
+
+div.kasse{
+background-color: mintcream;
+margin:10px;
+border: 2px solid black;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
