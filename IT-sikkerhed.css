@@ -1,9 +1,10 @@
 body {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 /* overskrift h1 design */
-h1{
+h2{
+    font-size: 30px;
 
 }
 
@@ -12,7 +13,34 @@ h1{
 
 
 div.kasse{
-background-color: mintcream;
+background-color: aliceblue;
+margin:10px;
+border: 2px solid black;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
+div.kasse2{
+background-color: aliceblue;
+margin:10px;
+border: 2px solid black;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
+div.kasse3{
+background-color: aliceblue;
+margin:10px;
+border: 2px solid black;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
+div.kasse4{
+background-color: aliceblue;
 margin:10px;
 border: 2px solid black;
 width: 40%;
