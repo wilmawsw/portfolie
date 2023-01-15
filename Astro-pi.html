@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> 
+<head>
+<link rel="stylesheet" href="myStyle.css">
+<style>
+body{
+    background-color: darkseagreen;
+    }  
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+a:active {
+  text-decoration: underline;
+}
+h1{
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-variant: small-caps;
+    }
+h2{
+     text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-variant: small-caps;   
+    }
+div{
+    background-color: white;
+  width: 800px;
+  border: 10px solid black;
+  padding: 40px;
+  margin: 90px;
+  text-align:center;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}    
+   
+p1{
+    text-align: right;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-variant: small-caps;  
+    }    
+    
+</style>    
+</head>
+<body>
+
+<ul>
+  <li><a href="#index.html">Forside</a></li>
+  <li><a href="#mig.html">Lidt om mig</a></li>
+  <li><a href="#IT-sikkerhed.html">IT-sikkerhed</a></li>
+  <li><a href="Astro-pi.html">Astro-pi</a></li>
+</ul>
+    
+<h1 style: text-align: center;> Astro-pi</h1>
+    
+<p1>Jeg har arbejdet sammen med Matilde, Sara og Alba</p1>    
+    
+<div><h2>Projektbeskrivelse</h2>
+Vi vil gerne undersøge, hvordan planter har det i to forskellige skove, der er placeret to forskellige steder. For at gøre dette vil vi bruge et infrarødt kamera, som vil kunne fortælle om planterne befinder sig i et godt eller dårligt miljø. Det kan man bruge det infrarøde kamera til, da det kan vise, hvor meget nær infrarød stråling planterne udsender. Dette indikerer nemlig densiteten og helbredet af planterne i det givne område. Til slut vil vi sammenligne de to skove, og se hvilken destination, der er mest optimal for planter at leve i.</div>
+    
+<div><h2>ESA’s specifikationer</h2>
+ESA har en masse forskellige specifikationer, som ens projekt skal være indenfor. En af disse er at det skal være et videnskabeligt projekt og ikke et spil. Dette har vi opfyldt ved at undersøge planters levestandarder i et specefikt områder, nemlig Amazonas, hvilket er videnskabeligt og ikke er et spil. Et andet krav er at forsøget ikke skal afhænge af en specifik begivenhed, som muligvis ikke vil finde sted i løbet af de tre timer. Dette lever vores projekt op til da vores forsøg ikke afhænger af nogen specifik begivenhed for at kunne finde sted. Et af ESA’s andre krav er, at forsøget ikke må kræve yderligere udstyr eller adgang til noget andet på ISS, hvilket vores projekt lever op til, da der ikke er behov for noget andet for at udføre vores forsøg. ESA har også nogle specifikke krav til ens kode. Nogle eksempler på disse er kravene: ens program skal bruge mindst en Sense Hat sensor eller kameraet, ens kode må ikke indeholde ondsindet kode, som bevidst prøver at forstyrre systemets funktionalitet og ens program skal ikke bruge netværk. Vores kode lever op til disse tre krav, da vi gør brug af kameraet, vores kode indeholder ikke nogen “ondsindet” kode og den skal ikke bruge netværk.
+    </div>
+<div><h2>Beskrivelse af sensor</h2>
+Dataen vi vil samle er billeder af to forskellige skove med et NDVI-filter. NDVI-filteret er et vegetationsindeks, som indikerer planternes sundhed baseret på, hvordan planter udsender bestemte bølgelængder i det elektromagnetiske spektrum. Det er cellestrukturen i planterne, som udsender nær-infrarød stråling, hvilket betyder at når planterne udfører fotosyntese, og de dermed vokser, vil planterne indeholde flere cellestrukturer. Dette betyder at sunde planter udsender mere NIR end planter som ikke trives. Så ved at tage billeder af to forskellige skove, vil man kunne bestemme hvilket sted planterne trives bedst.
+</div>
+<div><h2>Gennemgang af kodestumper</h2>
+     <img src="Astro-pi.jpg" height="400" width="800">
+Denne kode bruges til, at tage billeder af vores valgte destination Amazonas. Dette gøres ved at lave en if-statement, som ses i linje 6, hvor vi skriver at hvis ISS er indenfor de breddegrader og længdegrader der er skrevet, så skal den tage et billede. 
+</div>
+<div><h2>Beskrivelse af testmåling</h2>
+    Når man løber vores program vil det være muligt med to forskellige output 
+Den første testmåling af ISS ikke over Amazonas:
+Det første udkom af testmålingerne er hvis ISS-sensoren ikke er over Amazonas. I dette tilfælde vil den måle længde- og breddegrad af sensorens lokation og hvor højt over jorden den befinder sig. Ud fra dette ved den, om den er indenfor det givne område, nemlig Amazonas, og når den ikke er det, som i dette tilfælde, så tager den ikke et billede og siger “intet billed”. 
+    <img src="intet_billede.jpg" height="200" width="800">
+Den anden testmåling er ISS over Amazonas:
+Det andet udkom af testmålingerne er hvis ISS-sensoren er over Amazonas. I dette tilfælde vil den igen måle længde- og breddegrad af sensorens lokation og hvor højt over jorden den befinder sig. Den vil igen ud fra dette vide om den er indenfor det givne område, nemlig Amazonas, og når den er det, som i dette tilfælde, så tager den et billede, som ligger vedhæftet nedenfor. Det er et billede af vinduet i klasselokalet.
+    <img src="muligt_billede.jpg" height="200" width="800">
+    </div>
+<div><h2>Flowchart</h2>
+    <img src="flowchart.jpg" height="900" width="800">
+    </div>
+<div><h2>Link til vores kode</h2>
+    <a href="zaynmalik.py" target="_blank">Programkode</a>
+    </div>
+
+</body>
+</html>

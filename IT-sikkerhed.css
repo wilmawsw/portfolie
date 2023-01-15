@@ -1,50 +1,38 @@
 body {
-  background-color: white;
+  background-color: lightblue;
 }
 
 /* overskrift h1 design */
-h2{
-    font-size: 30px;
-
-}
-
-
-
-
 
 div.kasse{
 background-color: aliceblue;
-margin:10px;
-border: 2px solid black;
-width: 40%;
-height: 40%;
-overflow: hidden;
-font-size: 40;
+  width: 800px;
+  border: 10px solid black;
+  padding: 40px;
+  margin: 50px;
+  text-align:center;
 }
 div.kasse2{
 background-color: aliceblue;
-margin:10px;
-border: 2px solid black;
-width: 40%;
-height: 40%;
-overflow: hidden;
-font-size: 40;
+  width: 800px;
+  border: 10px solid black;
+  padding: 40px;
+  margin: 50px;
+  text-align:center;
 }
 div.kasse3{
 background-color: aliceblue;
-margin:10px;
-border: 2px solid black;
-width: 40%;
-height: 40%;
-overflow: hidden;
-font-size: 40;
+  width: 800px;
+  border: 10px solid black;
+  padding: 40px;
+  margin: 50px;
+  text-align:center;
 }
 div.kasse4{
 background-color: aliceblue;
-margin:10px;
-border: 2px solid black;
-width: 40%;
-height: 40%;
-overflow: hidden;
-font-size: 40;
+  width: 800px;
+  border: 10px solid black;
+  padding: 40px;
+  margin: 50px;
+  text-align:center;
 }

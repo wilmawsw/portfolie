@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(255,255,240);
+}
+
+/* overskrift h1 design */
+h1{
+font-style: italic;
+}
+
+p{
+background-color: rgb(240,248,255)
+}
+
+
+
+div.kasse{
+border:20px solid black;
+background-color: rgb(176,196,222);
+width: 500px;
+padding:20px;
+margin:20px;  
+}
+
