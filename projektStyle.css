@@ -42,3 +42,14 @@ height: 200px;
 overflow: hidden;
 font-size: 40;
 }
+
+div.kasse4{
+background-color: aliceblue;
+margin:10px;
+border: 2px solid black;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+position: relative;
+}
